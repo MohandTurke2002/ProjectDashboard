@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+.row {
+  max-width: 100.9%;
+}
+.row .side {
+  padding: 0;
+  margin: 0;
+}
+.row .content {
+  padding: 0;
+  margin: 0;
+}
+
+.navside {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  padding: 20px;
+  width: 100%;
+  -webkit-box-shadow: 0 0 10px #ddd;
+          box-shadow: 0 0 10px #ddd;
+}
+.navside .title {
+  margin-bottom: 50px;
+  font-size: 19px;
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+}
+.navside .title::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 2;
+  bottom: -22px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 4px solid white;
+}
+.navside .title::after {
+  content: "";
+  width: 67%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.navside .link ul {
+  margin: 0;
+  padding: 0 10px;
+  list-style: none;
+}
+.navside .link ul li {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+.navside .link ul li:hover {
+  background-color: #f6f6f6;
+}
+.navside .link ul li a {
+  text-decoration: none;
+  color: black;
+}
+.navside .link ul li a svg {
+  margin: 0 15px 0 0;
+}
