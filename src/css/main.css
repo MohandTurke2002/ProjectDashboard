@@ -110,7 +110,10 @@ body {
   .side .navside .title::after {
     display: none;
   }
+  .side .navside ul li svg {
+    margin: 0 !important;
+  }
   .side .navside ul li p {
-    display: none;
+    display: none !important;
   }
 }

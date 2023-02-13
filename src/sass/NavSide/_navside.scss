@@ -81,8 +81,11 @@
       }
       ul {
         li {
+          svg {
+            margin: 0 !important;
+          }
           p {
-            display: none;
+            display: none !important;
           }
         }
       }
