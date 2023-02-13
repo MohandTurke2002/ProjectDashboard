@@ -9,10 +9,9 @@ html(lang="en")
     link(rel="stylesheet", href="./css/main.css")
     title Document
   body 
-    div(class="dashboard" id="dashboard")
-      div(class="row")
-        div(class="side col-2")
-          include components/navside
-        div(class="content col-10")
+    div(class="dashboard d-flex" id="dashboard")
+      div(class="side")
+        include components/navside
+      div(class="content")
     script(src="./js/all.min.js")
 

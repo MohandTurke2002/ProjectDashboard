@@ -11,7 +11,7 @@ body {
 }
 
 .row {
-  max-width: 100.9%;
+  max-width: 100%;
 }
 .row .side {
   padding: 0;
@@ -22,7 +22,10 @@ body {
   margin: 0;
 }
 
-.navside {
+.side {
+  width: 210px;
+}
+.side .navside {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -32,14 +35,14 @@ body {
   -webkit-box-shadow: 0 0 10px #ddd;
           box-shadow: 0 0 10px #ddd;
 }
-.navside .title {
+.side .navside .title {
   margin-bottom: 50px;
   font-size: 19px;
   position: relative;
   text-align: center;
   font-weight: 600;
 }
-.navside .title::before {
+.side .navside .title::before {
   content: "";
   position: absolute;
   width: 18px;
@@ -55,9 +58,9 @@ body {
           box-sizing: border-box;
   border: 4px solid white;
 }
-.navside .title::after {
+.side .navside .title::after {
   content: "";
-  width: 67%;
+  width: 100px;
   height: 2px;
   background-color: black;
   position: absolute;
@@ -66,23 +69,48 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-.navside .link ul {
+.side .navside .link ul {
   margin: 0;
   padding: 0 10px;
   list-style: none;
 }
-.navside .link ul li {
+.side .navside .link ul li {
   padding: 10px;
   font-size: 14px;
   border-radius: 6px;
 }
-.navside .link ul li:hover {
+.side .navside .link ul li:hover {
   background-color: #f6f6f6;
 }
-.navside .link ul li a {
+.side .navside .link ul li a {
   text-decoration: none;
   color: black;
 }
-.navside .link ul li a svg {
+.side .navside .link ul li a p {
+  display: inline;
+}
+.side .navside .link ul li a svg {
   margin: 0 15px 0 0;
+}
+
+@media (max-width: 767px) {
+  .side {
+    width: 58px;
+  }
+  .side .navside {
+    padding: 10px 0;
+  }
+  .side .navside .title {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .side .navside .title::before {
+    display: none;
+  }
+  .side .navside .title::after {
+    display: none;
+  }
+  .side .navside ul li p {
+    display: none;
+  }
 }
