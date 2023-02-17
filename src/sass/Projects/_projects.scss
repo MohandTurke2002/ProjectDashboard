@@ -1,0 +1,220 @@
+.box-pr {
+  padding: 10px;
+  .con {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    .text {
+      h5 {
+        margin: 0;
+        font-size: 16px;
+      }
+      .disc {
+        margin: 10px 0;
+        font-size: 14px;
+        color: #888;
+      }
+      .date {
+        margin: 0;
+        font-size: 13px;
+        color: #888;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+      }
+    }
+    .image {
+      position: relative;
+      margin: 40px 0;
+      div.impr {
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 2px solid white;
+        }
+        top: 0;
+        position: absolute;
+        cursor: pointer;
+        &:hover {
+          z-index: 10000;
+        }
+      }
+      div:nth-child(1) {
+        left: 0;
+      }
+      div:nth-child(2) {
+        left: 25px;
+      }
+      div:nth-child(3) {
+        left: 50px;
+      }
+      div:nth-child(4) {
+        left: 75px;
+      }
+      div:nth-child(5) {
+        left: 100px;
+      }
+    }
+    .proj {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding: 10px 0;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      margin-top: 100px;
+      padding: 15px 0;
+      p {
+        padding: 3px 8px;
+        height: fit-content;
+        background-color: #eee;
+        border-radius: 6px;
+        margin: 0 5px 0 0;
+        font-size: 13px;
+      }
+    }
+    .chart {
+      display: flex;
+      padding: 10px 0 0;
+      justify-content: space-between;
+      align-items: center;
+      div {
+        width: 58%;
+        background-color: #eee;
+        height: 8px;
+        border-radius: 6px;
+        span {
+          height: 100%;
+          border-radius: 6px;
+          background-color: #22c55e;
+          display: block;
+        }
+      }
+      p {
+        margin: 0;
+        color: #888;
+      }
+    }
+  }
+}
+.main {
+  .box-pr {
+    .con {
+      .chart {
+        div {
+          .one {
+            width: 50%;
+            background-color: #f44336 !important;
+          }
+        }
+      }
+    }
+  }
+  .box-pr {
+    .con {
+      .chart {
+        div {
+          .two {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+  .box-pr {
+    .con {
+      .chart {
+        div {
+          .three {
+            width: 100%;
+            background-color: #0075ff !important;
+          }
+        }
+      }
+    }
+  }
+  .box-pr {
+    .con {
+      .chart {
+        div {
+          .four {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+  .box-pr {
+    .con {
+      .chart {
+        div {
+          .five {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+  .box-pr {
+    .con {
+      .chart {
+        div {
+          .six {
+            width: 40%;
+            background-color: #f44336 !important;
+          }
+        }
+      }
+    }
+  }
+  .box-pr {
+    .con {
+      .chart {
+        div {
+          .seven {
+            width: 65%;
+          }
+        }
+      }
+    }
+  }
+  .box-pr {
+    .con {
+      .chart {
+        div {
+          .eight {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+  .box-pr {
+    .con {
+      .chart {
+        div {
+          .nine {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .proj {
+    flex-direction: column;
+    align-items: flex-start !important;
+    row-gap: 12px;
+  }
+  .chart {
+    flex-direction: column;
+    row-gap: 12px;
+    div {
+      width: 100% !important;
+    }
+  }
+}

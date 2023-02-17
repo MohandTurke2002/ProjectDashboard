@@ -1,5 +1,7 @@
 .side {
   width: 250px;
+  position: relative;
+  z-index: 99999;
   .navside {
     width: fit-content;
     height: 100%;

@@ -7,12 +7,111 @@ html(lang="en")
     link(rel="stylesheet", href="./css/all.min.css")
     link(rel="stylesheet", href="./css/bootstrap.min.css")
     link(rel="stylesheet", href="./css/main.css")
-    title Document
+    title Dashboard
   body 
     div(class="dashboard d-flex" id="dashboard")
       div(class="side")
         include components/navside
       div(class="content")
         include components/header
+        div(class="main")
+          h1(class="special-header") Dashboard
+          div(class="container")
+            div(class="row")
+              div(class="box1 col-sm-12 col-md-12 col-lg-6")
+                div(class="contentwel")
+                  div(class="up")
+                    div(class="header")
+                      h3 Welcome
+                      p Mohand
+                    div(class="image")
+                      img(src="./images/welcome.png")
+                  div(class="down")
+                    img(src="./images/avatar.png")
+                    div(class="state")
+                      div(class="sec")
+                        p Mohand Hany
+                        p(class="para") Developer
+                      div(class="sec")
+                        p 80
+                        p(class="para") Projects
+                      div(class="sec")
+                        p $8500
+                        p(class="para") Earned
+                    button Profile
+              div(class="box2 col-sm-12 col-md-12 col-lg-6")
+                div(class="contentdraf")
+                  h3(class="header-special") Quick Draft
+                  p(class="para-special") Write A Draft For Your Ideas
+                  div(class="inpu")
+                    input(type="text" placeholder="Title")
+                    textarea(type="text" placeholder="Your Thought")
+                    button Save
+              div(class="box3 col-sm-12 col-md-12 col-lg-6")
+                div(class="contenttarget")
+                  h3(class="header-special") Yearly Targets
+                  p(class="para-special") Targets Of The Year
+                  div(class="static")
+                    div(class="money")
+                      div(class="icon")
+                        <i class="fa-solid fa-dollar-sign"></i>
+                      div(class="show")
+                        p(class="para") Money
+                        p $20.000
+                        div(class="chart")
+                          span(class="color")
+                            span 80%
+                    div(class="project")
+                      div(class="icon")
+                        <i class="fa-solid fa-code"></i>
+                      div(class="show")
+                        p(class="para") Projects
+                        p 24
+                        div(class="chart")
+                          span(class="color")
+                            span 55%
+                    div(class="team")
+                      div(class="icon")
+                        <i class="fa-solid fa-user"></i>
+                      div(class="show")
+                        p(class="para") Team
+                        p 12
+                        div(class="chart")
+                          span(class="color")
+                            span 75%
+              div(class="box4 col-sm-12 col-md-12 col-lg-6")
+                div(class="contenttickets")
+                  h3(class="header-special") Tickets Statistics
+                  p(class="para-special") Everything About Support Tickets
+                  div(class="row")
+                    div(class="total col-sm-12 col-md-12 col-lg-6")
+                      div(class="con")
+                        <i class="fa-regular fa-rectangle-list"></i>
+                        h3 2500
+                        p Total
+                    div(class="pend col-sm-12 col-md-12 col-lg-6")
+                      div(class="con")
+                        <i class="fa-solid fa-spinner"></i>
+                        h3 500
+                        p Pending
+                    div(class="close col-sm-12 col-md-12 col-lg-6")
+                      div(class="con")
+                        <i class="fa-regular fa-circle-check"></i>
+                        h3 1900
+                        p Closed
+                    div(class="delet col-sm-12 col-md-12 col-lg-6")
+                      div(class="con")
+                        <i class="fa-regular fa-circle-xmark"></i>
+                        h3 100
+                        p Deleted
+              div(class="box5 col-sm-12 col-md-12 col-lg-6")
+              div(class="box6 col-sm-12 col-md-12 col-lg-6")
+              div(class="box7 col-sm-12 col-md-12 col-lg-6")
+              div(class="box8 col-sm-12 col-md-12 col-lg-6")
+              div(class="box9 col-sm-12 col-md-12 col-lg-6")
+              div(class="box10 col-sm-12 col-md-12 col-lg-6")
+              div(class="box11 col-sm-12 col-md-12 col-lg-6")
+              div(class="box12 col-sm-12 col-md-12 col-lg-6")
+              div(class="box13 col-sm-12 col-md-12 col-lg-6")
     script(src="./js/all.min.js")
 
