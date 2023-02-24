@@ -1,0 +1,227 @@
+// Start Person
+.box-pro-pr {
+  padding: 10px;
+  background-color: transparent;
+  .con {
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    .row {
+      width: 105%;
+      flex-grow: 1;
+    }
+    .person {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      border-right: 1px solid #eee;
+      img {
+        width: 120px;
+        margin-bottom: 10px;
+      }
+      h3 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      p:first-of-type {
+        margin: 10px 0 16px;
+        color: #888;
+      }
+      .chart {
+        width: 150px;
+        background-color: #eee;
+        height: 6px;
+        border-radius: 10px;
+        > span {
+          width: 60%;
+          display: block;
+          height: 100%;
+          background-color: #0075ff;
+          border-radius: 10px;
+        }
+      }
+      .rate {
+        margin: 10px 0;
+        color: #f59e0b;
+      }
+      p:last-of-type {
+        margin: 0;
+        font-size: 13px;
+        color: #888;
+      }
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      .contain {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+        > h5 {
+          width: 100%;
+          font-size: 15px;
+          color: #888;
+          margin: 0;
+        }
+        .div {
+          min-width: 250px;
+          padding: 10px 0 0;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          > h5 {
+            margin: 0;
+            font-size: 14px;
+            color: #888;
+          }
+          p {
+            margin: 0;
+            margin-left: 5px;
+          }
+        }
+        .divl {
+          min-width: 150px;
+          display: flex;
+          align-items: end;
+          input {
+            width: 78px;
+            height: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+      .contain:last-of-type {
+        border: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .box-pro-pr {
+    .con {
+      .person {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1141px) {
+  .box-pro-pr {
+    .con {
+      .person {
+        width: 20%;
+      }
+      .options {
+        width: 80%;
+      }
+    }
+  }
+}
+// End Person
+// Start skills
+.box-pro-sk {
+  padding: 10px;
+  background-color: transparent;
+  .con {
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+    .contain {
+      display: flex;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+      p {
+        margin: 0;
+        padding: 4px 10px;
+        background-color: #eee;
+        border-radius: 6px;
+        margin-right: 5px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+    .contain:last-of-type {
+      border: none;
+    }
+  }
+}
+// End Skills
+// Start Activites
+.box-pro-act {
+  padding: 10px;
+  background-color: transparent;
+  .con {
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+    .contain {
+      display: flex;
+      flex-wrap: wrap;
+      .div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eee;
+        img {
+          width: 64px;
+          height: 64px;
+          margin-right: 10px;
+        }
+        h4 {
+          margin-bottom: 10px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        p {
+          margin: 0;
+          font-size: 16px;
+          color: #888;
+        }
+        .gray {
+          flex-grow: 1;
+          text-align: end;
+        }
+      }
+      .div:last-of-type {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .box-pro-act {
+    .contain {
+      .div {
+        flex-direction: column;
+        img {
+          margin-right: 0 !important;
+          margin-bottom: 10px;
+        }
+        h4 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          margin-bottom: 10px !important;
+        }
+      }
+    }
+  }
+}
+// End Activites

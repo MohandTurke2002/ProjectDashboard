@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Settings</title>
+  </head>
+  <body> 
+    <div class="dashboard d-flex" id="dashboard">
+      <div class="side">
+        <div class="navside"> 
+          <h5 class="title">Mohand</h5>
+          <div class="link">
+            <ul> 
+              <li class="active"><a href="https://mohandturke2002.github.io/ProjectDashboard/build/index.html"><i class="fa-solid fa-chart-bar"></i>
+                  <p>Dashboard </p></a></li>
+              <li><a href="https://mohandturke2002.github.io/ProjectDashboard/build/Settings.html">
+                   <i class="fa-solid fa-gear"></i>
+                  <p>Settings </p></a></li>
+              <li><a href="https://mohandturke2002.github.io/ProjectDashboard/build/profile.html">
+                   <i class="fa-regular fa-user"></i>
+                  <p>Profile </p></a></li>
+              <li> <a href="https://mohandturke2002.github.io/ProjectDashboard/build/projects.html"><i class="fa-solid fa-share-nodes"></i>
+                  <p>Projects </p></a></li>
+              <li> <a href="https://mohandturke2002.github.io/ProjectDashboard/build/coursers.html"><i class="fa-solid fa-graduation-cap"></i>
+                  <p>Coursers </p></a></li>
+              <li> <a href="https://mohandturke2002.github.io/ProjectDashboard/build/friends.html"><i class="fa-regular fa-circle-user"></i>
+                  <p>Friends </p></a></li>
+              <li> <a href="https://mohandturke2002.github.io/ProjectDashboard/build/files.html"><i class="fa-regular fa-file"></i>
+                  <p>Files </p></a></li>
+              <li> <a href="https://mohandturke2002.github.io/ProjectDashboard/build/plan.html"><i class="fa-regular fa-credit-card"></i>
+                  <p>Plans </p></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="header">
+          <div class="d-flex">
+            <div class="search"><i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search" placeholder="Type A Keyword">
+            </div>
+            <div class="person"><i class="fa-regular fa-bell"></i><img src="./images/avatar.png"></div>
+          </div>
+        </div>
+        <div class="main">
+          <h1 class="special-header">Settings</h1>
+          <div class="container">
+            <div class="row">
+              <div class="box-st si col-sm-12 col-md-12 col-lg-6">
+                <div class="con">
+                  <h3 class="header-special">Site Control</h3>
+                  <p class="para-special">Control The Website If There Is Maintenance</p>
+                  <div class="contain">
+                    <div class="text">
+                      <h5>Website Control</h5>
+                      <p>Open/Close Website And Type The Reason</p>
+                    </div><div class="form-check form-switch divl">
+<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+</div>
+                    <textarea type="textarea" placeholder="Close Message Content"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="box-st ge col-sm-12 col-md-12 col-lg-6">
+                <div class="con">
+                  <h3 class="header-special">General Info</h3>
+                  <p class="para-special">General Information About Your Account</p>
+                  <form>
+                    <div class="div">
+                      <label for="first">First Name</label>
+                      <input type="text" id="first" placeholder="First Name">
+                    </div>
+                    <div class="div">
+                      <label for="Last">Last Name</label>
+                      <input type="text" id="Last" placeholder="Last Name">
+                    </div>
+                    <div class="div">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" value="mohandhany35@gmail.com" disabled><a href="#">Change</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="box-st se col-sm-12 col-md-12 col-lg-6">
+                <div class="con">
+                  <h3 class="header-special">Security Info</h3>
+                  <p class="para-special">Security Information About Your Account</p>
+                  <div class="contain">
+                    <div class="div">
+                      <div class="text">
+                        <h5>Password</h5>
+                        <p>Last Change On 25/10/2021</p>
+                      </div>
+                      <div class="button">
+                        <button> <a>Change</a></button>
+                      </div>
+                    </div>
+                    <div class="div">
+                      <div class="text">
+                        <h5>Two-Factor Authentication</h5>
+                        <p>Enable/Disable The Feature</p>
+                      </div><div class="form-check form-switch divl">
+<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+</div>
+                    </div>
+                    <div class="div">
+                      <div class="text">
+                        <h5>Devices</h5>
+                        <p>Check The Login Devices List</p>
+                      </div>
+                      <div class="button dv">
+                        <button> <a>Devices</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-st so col-sm-12 col-md-12 col-lg-6">
+                <div class="con">
+                  <h3 class="header-special">Social Info</h3>
+                  <p class="para-special">Social Media Information
+                    <div class="contain">
+                      <div class="div">
+                        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                        <input type="text" placeholder="Twitter Username" disabled>
+                      </div>
+                      <div class="div">
+                        <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                        <input type="text" placeholder="Facebook Username" disabled>
+                      </div>
+                      <div class="div">
+                        <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                        <input type="text" placeholder="Linkedin Username" disabled>
+                      </div>
+                      <div class="div">
+                        <div class="icon"><i class="fa-brands fa-youtube"></i></div>
+                        <input type="text" placeholder="Youtube Username" disabled>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+              <div class="box-st wi col-sm-12 col-md-12 col-lg-6">
+                <div class="con">
+                  <h3 class="header-special">Widgets Control</h3>
+                  <p class="para-special">Show/Hide Widgets</p>
+                  <div class="contain">
+                    <div class="div"><input class="form-check-input" type="checkbox" value="" id="one">
+                      <label for="one">Quick Draft</label>
+                    </div>
+                    <div class="div"><input class="form-check-input" type="checkbox" value="" id="two">
+                      <label for="two">Yearly Targets</label>
+                    </div>
+                    <div class="div"><input class="form-check-input" type="checkbox" value="" id="three">
+                      <label for="three">Tickets Statistics</label>
+                    </div>
+                    <div class="div"><input class="form-check-input" type="checkbox" value="" id="four">
+                      <label for="four">Latest News</label>
+                    </div>
+                    <div class="div"><input class="form-check-input" type="checkbox" value="" id="five">
+                      <label for="five">Latest Tasks</label>
+                    </div>
+                    <div class="div"><input class="form-check-input" type="checkbox" value="" id="six">
+                      <label for="six">Top Search Items</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-st ba col-sm-12 col-md-12 col-lg-6">
+                <div class="con">
+                  <h3 class="header-special">Backup Manager</h3>
+                  <p class="para-special">Control Backup Time And Location</p>
+                  <div class="contain">
+                    <div class="div"><input class="form-check-input" type="radio" name="inlineRadioOptions" id="one-ba" value="option1">
+                      <label for="one-ba">Daily</label>
+                    </div>
+                    <div class="div"><input class="form-check-input" type="radio" name="inlineRadioOptions" id="two-ba" value="option1">
+                      <label for="two-ba">Weekly</label>
+                    </div>
+                    <div class="div"><input class="form-check-input" type="radio" name="inlineRadioOptions" id="three-ba" value="option1">
+                      <label for="three-ba">Monthly</label>
+                    </div>
+                    <div class="squers">
+                      <div class="div-sq"><i class="fa-solid fa-server"></i>
+                        <p>Megaman</p>
+                      </div>
+                      <div class="div-sq"><i class="fa-solid fa-server"></i>
+                        <p>Zero</p>
+                      </div>
+                      <div class="div-sq"><i class="fa-solid fa-server"></i>
+                        <p>Sigma</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/all.min.js"></script>
+  </body>
+</html>

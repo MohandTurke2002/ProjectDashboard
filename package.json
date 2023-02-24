@@ -1,0 +1,29 @@
+{
+  "name": "projectdashboard",
+  "version": "1.0.0",
+  "description": "this poroject is dashbosrd control with (html pugjs css scss bootstrab javascribt jquery)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohandTurke2002/ProjectDashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohandTurke2002/ProjectDashboard/issues"
+  },
+  "homepage": "https://github.com/MohandTurke2002/ProjectDashboard#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-livereload": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-css-minify": "^0.9.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-pug": "^5.0.0",
+    "static-server": "^2.2.1"
+  }
+}

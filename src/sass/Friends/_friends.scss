@@ -1,0 +1,118 @@
+.box-fr {
+  padding: 10px;
+  background-color: transparent;
+  .con {
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+    .up {
+      a {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 50%;
+        width: 33px;
+        height: 33px;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #666;
+      }
+      a:last-of-type {
+        left: 48px !important;
+      }
+      .image {
+        text-align: center;
+        margin: 10px 0;
+        img {
+          width: 100px;
+          border-radius: 50%;
+        }
+      }
+      h3 {
+        margin: 0;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 700;
+      }
+      p {
+        font-size: 13px;
+        color: #888;
+        text-align: center;
+        margin: 5px 0 13px;
+      }
+    }
+    .mid {
+      margin: 15px 0;
+      padding: 15px 0;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      p {
+        font-size: 14px;
+        margin: 0 0 10px;
+        svg {
+          margin-right: 5px;
+        }
+      }
+    }
+    .down {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        margin: 0;
+        color: #888;
+        font-size: 13px;
+        height: fit-content;
+      }
+      .controll {
+        a {
+          font-size: 13px;
+          background-color: #0075ff;
+          color: white;
+          padding: 4px 10px;
+          border-radius: 6px;
+        }
+        a:last-child {
+          background-color: #f44336 !important;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+.box-fr {
+  .vip {
+    .mid {
+      position: relative;
+      &::before {
+        content: "VIP";
+        position: absolute;
+        color: #f59e0b;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 40px;
+        opacity: 0.2;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .box-fr {
+    width: calc(100% / 3) !important;
+  }
+}
+
+@media (min-width: 1350px) {
+  .box-fr {
+    width: 25% !important;
+  }
+}

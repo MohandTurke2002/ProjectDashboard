@@ -1,0 +1,142 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="./css/all.min.css")
+    link(rel="stylesheet", href="./css/bootstrap.min.css")
+    link(rel="stylesheet", href="./css/main.css")
+    title Settings
+  body 
+    div(class="dashboard d-flex" id="dashboard")
+      div(class="side")
+        include components/navside
+      div(class="content")
+        include components/header
+        div(class="main")
+          h1(class="special-header") Settings
+          div(class="container")
+            div(class="row")
+              div(class="box-st si col-sm-12 col-md-12 col-lg-6")
+                div(class="con")
+                  h3(class="header-special") Site Control
+                  p(class="para-special") Control The Website If There Is Maintenance
+                  div(class="contain")
+                    div(class="text")
+                      h5 Website Control
+                      p Open/Close Website And Type The Reason
+                    <div class="form-check form-switch divl">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    </div>
+                    textarea(type="textarea" placeholder="Close Message Content")
+              div(class="box-st ge col-sm-12 col-md-12 col-lg-6")
+                div(class="con")
+                  h3(class="header-special") General Info
+                  p(class="para-special") General Information About Your Account
+                  form
+                    div(class="div")
+                      label(for="first") First Name
+                      input(type="text" id="first" placeholder="First Name")
+                    div(class="div")
+                      label(for="Last") Last Name
+                      input(type="text" id="Last" placeholder="Last Name")
+                    div(class="div")
+                      label(for="email") Email
+                      input(type="email" id="email" value="mohandhany35@gmail.com" disabled)
+                      a(href="#") Change
+              div(class="box-st se col-sm-12 col-md-12 col-lg-6")
+                div(class="con")
+                  h3(class="header-special") Security Info
+                  p(class="para-special") Security Information About Your Account
+                  div(class="contain")
+                    div(class="div")
+                      div(class="text")
+                        h5 Password
+                        p Last Change On 25/10/2021
+                      div(class="button")
+                        button 
+                          a Change
+                    div(class="div")
+                      div(class="text")
+                        h5 Two-Factor Authentication
+                        p Enable/Disable The Feature
+                      <div class="form-check form-switch divl">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                      </div>
+                    div(class="div")
+                      div(class="text")
+                        h5 Devices
+                        p Check The Login Devices List
+                      div(class="button dv")
+                        button 
+                          a Devices
+              div(class="box-st so col-sm-12 col-md-12 col-lg-6")
+                div(class="con")
+                  h3(class="header-special") Social Info
+                  p(class="para-special") Social Media Information
+                    div(class="contain")
+                      div(class="div")
+                        div(class="icon")
+                          <i class="fa-brands fa-twitter"></i>
+                        input(type="text" placeholder="Twitter Username" disabled)
+                      div(class="div")
+                        div(class="icon")
+                          <i class="fa-brands fa-facebook-f"></i>
+                        input(type="text" placeholder="Facebook Username" disabled)
+                      div(class="div")
+                        div(class="icon")
+                          <i class="fa-brands fa-linkedin"></i>
+                        input(type="text" placeholder="Linkedin Username" disabled)
+                      div(class="div")
+                        div(class="icon")
+                          <i class="fa-brands fa-youtube"></i>
+                        input(type="text" placeholder="Youtube Username" disabled)
+              div(class="box-st wi col-sm-12 col-md-12 col-lg-6")
+                div(class="con")
+                  h3(class="header-special") Widgets Control
+                  p(class="para-special") Show/Hide Widgets
+                  div(class="contain")
+                    div(class="div")
+                      <input class="form-check-input" type="checkbox" value="" id="one">
+                      label(for="one") Quick Draft
+                    div(class="div")
+                      <input class="form-check-input" type="checkbox" value="" id="two">
+                      label(for="two") Yearly Targets
+                    div(class="div")
+                      <input class="form-check-input" type="checkbox" value="" id="three">
+                      label(for="three") Tickets Statistics
+                    div(class="div")
+                      <input class="form-check-input" type="checkbox" value="" id="four">
+                      label(for="four") Latest News
+                    div(class="div")
+                      <input class="form-check-input" type="checkbox" value="" id="five">
+                      label(for="five") Latest Tasks
+                    div(class="div")
+                      <input class="form-check-input" type="checkbox" value="" id="six">
+                      label(for="six") Top Search Items
+              div(class="box-st ba col-sm-12 col-md-12 col-lg-6")
+                div(class="con")
+                  h3(class="header-special") Backup Manager
+                  p(class="para-special") Control Backup Time And Location
+                  div(class="contain")
+                    div(class="div")
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="one-ba" value="option1">
+                      label(for="one-ba") Daily
+                    div(class="div")
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="two-ba" value="option1">
+                      label(for="two-ba") Weekly
+                    div(class="div")
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="three-ba" value="option1">
+                      label(for="three-ba") Monthly
+                    div(class="squers")
+                      div(class="div-sq")
+                        <i class="fa-solid fa-server"></i>
+                        p Megaman
+                      div(class="div-sq")
+                        <i class="fa-solid fa-server"></i>
+                        p Zero
+                      div(class="div-sq")
+                        <i class="fa-solid fa-server"></i>
+                        p Sigma
+    script(src="./js/all.min.js")

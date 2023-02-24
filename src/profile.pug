@@ -1,0 +1,149 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="./css/all.min.css")
+    link(rel="stylesheet", href="./css/bootstrap.min.css")
+    link(rel="stylesheet", href="./css/main.css")
+    title Profile
+  body 
+    div(class="dashboard d-flex" id="dashboard")
+      div(class="side")
+        include components/navside
+      div(class="content")
+        include components/header
+        div(class="main")
+          h1(class="special-header") Profile
+          div(class="container")
+            div(class="row")
+              div(class="box-pro-pr col-sm-12 col-md-12 col-lg-12")
+                div(class="con")
+                  div(class="row")
+                    div(class="person col-sm-12 col-md-12 col-lg-3")
+                      img(src="./images/avatar.png")
+                      h3 Mohand Hany
+                      p Level 20
+                      div(class="chart")
+                        span
+                      div(class="rate")
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      p 550 Rating
+                    div(class="options col-sm-12 col-md-12 col-lg-9")
+                      div(class="contain")
+                        h5 General Information
+                        div(class="div")
+                          h5 Full Name
+                          p Mohand Hany
+                        div(class="div")
+                          h5 Gender:
+                          p Male
+                        div(class="div")
+                          h5 Country:
+                          p Egypt
+                        <div class="form-check form-switch divl">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        </div>
+                      div(class="contain")
+                        h5 Personal Information
+                        div(class="div")
+                          h5 Email:
+                          p mohandhany35@gmail.com
+                        div(class="div")
+                          h5 Date Of Birth:
+                          p  17/10/2002
+                        div(class="div")
+                          h5 Phone:
+                          p 019123456789
+                        <div class="form-check form-switch divl">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        </div>
+                      div(class="contain")
+                        h5 Job Information
+                        div(class="div")
+                          h5 Title:
+                          p Front End Developer
+                        div(class="div")
+                          h5 Years Of Experience:
+                          p 1
+                        div(class="div")
+                          h5 Programming Language:
+                          p JavaScribt
+                        <div class="form-check form-switch divl">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        </div>
+                      div(class="contain")
+                        h5 Billing Information
+                        div(class="div")
+                          h5 Payment Method:
+                          p Paypal
+                        div(class="div")
+                          h5 Subscription:
+                          p  Monthly
+                        div(class="div")
+                          h5 Email:
+                          p mohandhany2002@gmail.com
+                        <div class="form-check form-switch divl">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        </div>
+              div(class="box-pro-sk col-sm-12 col-md-12 col-lg-4")
+                div(class="con")
+                  h3(class="header-special") My Skills
+                  p(class="para-special") Complete Skils List
+                  div(class="contain")
+                    p HTML
+                    p CSS
+                    p JavaScript
+                  div(class="contain") 
+                    p SCSS
+                    p Pugjs
+                    p JQuery
+                  div(class="contain")
+                    p Bootstrab
+                    p Tailwind
+                  div(class="contain")
+                    p Gulpjs
+                    p Git
+              div(class="box-pro-act col-sm-12 col-md-12 col-lg-8")
+                div(class="con")
+                  h3(class="header-special") Latest Activities
+                  p(class="para-special") Latest Activities Done By The User
+                  div(class="contain")
+                    div(class="div")
+                      img(src="./images/activity-01.png")
+                      div(class="black")
+                        h4 Store
+                        p Bought The Mastering Python Course
+                      div(class="gray")
+                        h4 18:10
+                        p Yesterday
+                    div(class="div")
+                      img(src="./images/activity-02.png")
+                      div(class="black")
+                        h4 Academy
+                        p Got The PHP Certificate
+                      div(class="gray")
+                        h4 16:05
+                        p Yesterday
+                    div(class="div")
+                      img(src="./images/activity-03.png")
+                      div(class="black")
+                        h4 Badges
+                        p Unlocked The 10 Skills Badge
+                      div(class="gray")
+                        h4 18:05
+                        p Yesterday
+                    div(class="div")
+                      img(src="./images/activity-01.png")
+                      div(class="black")
+                        h4 Store
+                        p Bought The Typescript Course
+                      div(class="gray")
+                        h4 12:05
+                        p Yesterday
+    script(src="./js/all.min.js")
