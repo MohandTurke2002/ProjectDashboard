@@ -1,5 +1,5 @@
 .side {
-  width: 250px;
+  width: 190px;
   position: relative;
   z-index: 99999;
   .navside {
@@ -48,7 +48,11 @@
           padding: 10px;
           font-size: 14px;
           border-radius: 6px;
+          margin-bottom: 10px;
           &:hover {
+            background-color: #f6f6f6;
+          }
+          &.active {
             background-color: #f6f6f6;
           }
           a {

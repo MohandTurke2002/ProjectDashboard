@@ -435,6 +435,11 @@
           color: #888;
         }
       }
+      .icon:hover {
+        color: #f44336;
+        cursor: pointer;
+        transition: 0.3s linear;
+      }
     }
     .div:last-of-type {
       border: none;
@@ -448,6 +453,10 @@
       }
       p {
         text-decoration: line-through;
+      }
+      .icon:hover {
+        color: inherit;
+        cursor: inherit;
       }
     }
   }
@@ -775,6 +784,10 @@
         align-items: center;
         justify-content: center;
         margin-right: 20px;
+        transition: 0.3s linear;
+        &:hover {
+          transform: rotateZ(10deg);
+        }
         svg {
           font-size: 32px;
           color: white;
@@ -866,6 +879,7 @@
       table {
         border: 1px solid #eee;
         min-width: 1000px;
+        width: 100%;
         thead {
           background-color: #eee;
           th {

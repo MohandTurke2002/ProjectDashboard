@@ -160,12 +160,18 @@
 .box-st.wi {
   .div {
     margin-bottom: 15px;
+    input {
+      margin-right: 5px;
+    }
   }
 }
 
 .box-st.ba {
   .div {
     margin-bottom: 15px;
+    input {
+      margin-right: 5px;
+    }
   }
   .squers {
     display: flex;
@@ -188,6 +194,15 @@
       }
       p {
         margin: 0;
+      }
+    }
+    .div-sq.chosen {
+      border-color: #0075ff !important;
+      svg {
+        color: #0075ff;
+      }
+      p {
+        color: #0075ff;
       }
     }
     .div-sq:last-of-type {

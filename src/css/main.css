@@ -14,7 +14,7 @@ body {
 }
 
 .content {
-  width: 100%;
+  width: calc(100% - 190px);
 }
 .content .side {
   padding: 0;
@@ -25,6 +25,11 @@ body {
   margin: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .content {
+    width: calc(100% - 58px) !important;
+  }
+}
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -37,11 +42,6 @@ body {
   background-color: #0075ff;
 }
 
-@media (max-width: 400px) {
-  .content {
-    max-width: 84% !important;
-  }
-}
 .active {
   background-color: #f6f6f6;
 }
@@ -92,7 +92,7 @@ body {
 }
 
 .side {
-  width: 250px;
+  width: 190px;
   position: relative;
   z-index: 99999;
 }
@@ -149,8 +149,12 @@ body {
   padding: 10px;
   font-size: 14px;
   border-radius: 6px;
+  margin-bottom: 10px;
 }
 .side .navside .link ul li:hover {
+  background-color: #f6f6f6;
+}
+.side .navside .link ul li.active {
   background-color: #f6f6f6;
 }
 .side .navside .link ul li a {
@@ -765,6 +769,12 @@ body {
   font-weight: 600;
   color: #888;
 }
+.box6 .contenttask .div .icon:hover {
+  color: #f44336;
+  cursor: pointer;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
 .box6 .contenttask .div:last-of-type {
   border: none;
   margin: 0 !important;
@@ -778,6 +788,10 @@ body {
 }
 .box6 .contenttask .done p {
   text-decoration: line-through;
+}
+.box6 .contenttask .done .icon:hover {
+  color: inherit;
+  cursor: inherit;
 }
 
 .box7 {
@@ -1172,6 +1186,15 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 20px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.box12 .contentsocial .twit .div:hover,
+.box12 .contentsocial .face .div:hover,
+.box12 .contentsocial .youtube .div:hover,
+.box12 .contentsocial .linkd .div:hover {
+  -webkit-transform: rotateZ(10deg);
+          transform: rotateZ(10deg);
 }
 .box12 .contentsocial .twit .div svg,
 .box12 .contentsocial .face .div svg,
@@ -1283,6 +1306,7 @@ body {
 .box13 .contenttable .contain table {
   border: 1px solid #eee;
   min-width: 1000px;
+  width: 100%;
 }
 .box13 .contenttable .contain table thead {
   background-color: #eee;
@@ -2506,9 +2530,15 @@ body {
 .box-st.wi .div {
   margin-bottom: 15px;
 }
+.box-st.wi .div input {
+  margin-right: 5px;
+}
 
 .box-st.ba .div {
   margin-bottom: 15px;
+}
+.box-st.ba .div input {
+  margin-right: 5px;
 }
 .box-st.ba .squers {
   display: -webkit-box;
@@ -2544,6 +2574,15 @@ body {
 }
 .box-st.ba .squers .div-sq p {
   margin: 0;
+}
+.box-st.ba .squers .div-sq.chosen {
+  border-color: #0075ff !important;
+}
+.box-st.ba .squers .div-sq.chosen svg {
+  color: #0075ff;
+}
+.box-st.ba .squers .div-sq.chosen p {
+  color: #0075ff;
 }
 .box-st.ba .squers .div-sq:last-of-type {
   margin-right: 0 !important;

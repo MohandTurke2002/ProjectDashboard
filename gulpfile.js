@@ -8,6 +8,8 @@ const cssMinify = require("gulp-css-minify");
 
 const { parallel } = require("gulp");
 
+const minify = require("gulp-minify");
+
 function pugcompile() {
   return gulp
     .src("src/**/*.pug")
@@ -23,8 +25,15 @@ function movecss() {
     .pipe(gulp.dest("./build/css"));
 }
 
+function minfJs() {
+  return gulp
+    .src("./src/js/main.js")
+    .pipe(minify())
+    .pipe(gulp.dest("./build/js"));
+}
+
 exports.default = function () {
   require("./server");
   livereload.listen();
-  gulp.watch(["./src/**/*.*"], parallel(pugcompile, movecss));
+  gulp.watch(["./src/**/*.*"], parallel(pugcompile, movecss, minfJs));
 };
