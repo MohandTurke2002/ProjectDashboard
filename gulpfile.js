@@ -19,10 +19,12 @@ function pugcompile() {
 }
 
 function movecss() {
-  return gulp
-    .src("./src/css/*.css")
-    .pipe(cssMinify())
-    .pipe(gulp.dest("./build/css"));
+  return (
+    gulp
+      .src("./src/css/*.css")
+      // .pipe(cssMinify())
+      .pipe(gulp.dest("./build/css"))
+  );
 }
 
 function minfJs() {

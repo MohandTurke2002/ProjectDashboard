@@ -189,11 +189,24 @@
       width: calc(100%);
       margin-right: 10px;
       text-align: center;
+      cursor: pointer;
+      transition: 0.3s linear;
+      &:hover {
+        border-color: #0075ff;
+        svg {
+          color: #0075ff;
+        }
+        p {
+          color: #0075ff;
+        }
+      }
       svg {
         margin-bottom: 5px;
+        transition: 0.3s linear;
       }
       p {
         margin: 0;
+        transition: 0.3s linear;
       }
     }
     .div-sq.chosen {
@@ -207,6 +220,14 @@
     }
     .div-sq:last-of-type {
       margin-right: 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .box-st.ba {
+    .squers {
+      flex-direction: column !important;
     }
   }
 }

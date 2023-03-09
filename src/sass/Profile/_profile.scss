@@ -65,6 +65,11 @@
         flex-wrap: wrap;
         padding: 20px;
         border-bottom: 1px solid #eee;
+        transition: 0.3s linear;
+        cursor: pointer;
+        &:hover {
+          background-color: #eee;
+        }
         > h5 {
           width: 100%;
           font-size: 15px;
@@ -124,6 +129,14 @@
       .options {
         width: 80%;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .box-pro-pr {
+    .person {
+      border: none !important;
     }
   }
 }

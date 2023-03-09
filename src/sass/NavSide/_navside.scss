@@ -45,19 +45,21 @@
         padding: 0 10px;
         list-style: none;
         li {
-          padding: 10px;
-          font-size: 14px;
-          border-radius: 6px;
-          margin-bottom: 10px;
-          &:hover {
-            background-color: #f6f6f6;
-          }
-          &.active {
-            background-color: #f6f6f6;
-          }
           a {
             text-decoration: none;
             color: black;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            display: block;
+            height: 100%;
+            &:hover {
+              background-color: #f6f6f6;
+            }
+            &.active {
+              background-color: #f6f6f6;
+            }
             p {
               display: inline;
             }
