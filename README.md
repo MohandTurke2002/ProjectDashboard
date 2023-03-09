@@ -1,2 +1,4 @@
 # ProjectDashboard
-this poroject is dashbosrd control with (html, pugjs, css, scss, bootstrab, & some of javascribt)
+this poroject is dashboard control & many page with (html, pugjs, css, scss, bootstrab, & some of javascribt)
+
+[Show Project](https://mohandturke2002.github.io/ProjectDashboard/build/index.html)
